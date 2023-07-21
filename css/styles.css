@@ -24,6 +24,10 @@ h2 {
   letter-spacing: 0.72px;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -77,7 +81,6 @@ h2 {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  background-color: red;
 }
 
 /**Header**/
@@ -163,6 +166,7 @@ h2 {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 0;
+  margin-bottom: 72px;
 }
 
 .welcome_section_button {
@@ -299,6 +303,9 @@ h2 {
 .section_four_list {
   background-color: var(--primary-white-color);
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /**Footer**/
@@ -317,9 +324,22 @@ h2 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 /**Portfolio**/
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-btns-ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 
 .portfolio-section-button {
   font-family: 'Roboto', sans-serif;
@@ -331,16 +351,25 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .portfolio-section-button:hover {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-section-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list-title {
@@ -349,6 +378,28 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--footer-background-color);
+  margin-bottom: 8px;
+  margin-top: 0px;
+  text-align: start;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.card-link-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-list-desc {
@@ -356,4 +407,5 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin: 0;
 }
