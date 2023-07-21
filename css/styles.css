@@ -104,7 +104,7 @@ img {
   margin: 0;
 }
 
-.nav_ul_address {
+.nav-ul-address {
   display: flex;
   flex-direction: row;
   gap: 40px;
