@@ -32,9 +32,23 @@ h2 {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**Logo**/
 
 .logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -42,6 +56,7 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-logo-color);
+  margin-right: 76px;
 }
 
 .studio_logo {
@@ -62,9 +77,35 @@ h2 {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  background-color: red;
 }
 
 /**Header**/
+
+.header {
+  border-bottom: 1px solid var(--footer-text-color, #e7e9fc);
+  padding: 24px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-ul-address {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+}
 
 .header-nav-links {
   color: #2e2f42;
@@ -72,6 +113,7 @@ h2 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-nav-links:hover {
@@ -103,25 +145,41 @@ h2 {
 /**Section_1**/
 .welcome_section {
   background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.div-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .welcome_title {
+  max-width: 496px;
   text-align: center;
   color: white;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
 .welcome_section_button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-family: 'Roboto', sans-serif;
-  background-color: #4d5ae5;
   color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 .welcome_section_button:hover {
@@ -133,21 +191,41 @@ h2 {
 
 /**Section_2**/
 
+.section_two {
+  padding: 120px 0;
+}
+
+.section_two_ul {
+  display: flex;
+  gap: 24px;
+}
+
+.section_two_li {
+  width: calc((100% - 72px) / 4);
+}
+
 .section_two_title {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .section_two_text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
 /**Section_3**/
+
+.section_three {
+  padding-bottom: 120px;
+}
 
 .section_three_title {
   text-align: center;
@@ -156,11 +234,24 @@ h2 {
   text-transform: capitalize;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.section_three_ul {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.section_three_li {
+  width: calc((100% - 48px) / 3);
 }
 
 /**Section_4**/
 .section_four {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section_four_main_title {
@@ -170,6 +261,19 @@ h2 {
   text-transform: capitalize;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.section-four-ul {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.member-container {
+  padding: 32px 0;
 }
 
 .section_four_member {
@@ -178,6 +282,9 @@ h2 {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .section_four_text {
@@ -185,15 +292,24 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0;
+  text-align: center;
 }
 
 .section_four_list {
   background-color: var(--primary-white-color);
+  width: calc((100% - 72px) / 4);
 }
 
 /**Footer**/
 .footer {
   background-color: var(--footer-background-color);
+  padding: 100px 0;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer_p {
