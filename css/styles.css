@@ -1,0 +1,237 @@
+/**General**/
+
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --primary-text-color: #434455;
+  --primary-white-color: #ffffff;
+  --primary-logo-color: #4d5ae5;
+  --footer-background-color: #2e2f42;
+  --footer-text-color: #f4f4fd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/**Logo**/
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-logo-color);
+}
+
+.studio_logo {
+  color: #2e2f42;
+}
+
+.studio_logo_footer {
+  color: #f4f4fd;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+}
+
+/**Header**/
+
+.header-nav-links {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-links:hover {
+  color: #404bbf;
+}
+
+.header-nav-links:focus {
+  color: #404bbf;
+}
+
+.header-nav-address {
+  color: #434455;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  font-style: normal;
+}
+
+.header-nav-address:hover {
+  color: #404bbf;
+}
+
+.header-nav-address:focus {
+  color: #404bbf;
+}
+
+/**Main**/
+
+/**Section_1**/
+.welcome_section {
+  background-color: #2e2f42;
+}
+
+.welcome_title {
+  text-align: center;
+  color: white;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.welcome_section_button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #4d5ae5;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+
+.welcome_section_button:hover {
+  background-color: #404bbf;
+}
+.welcome_section_button:focus {
+  background-color: #404bbf;
+}
+
+/**Section_2**/
+
+.section_two_title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section_two_text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/**Section_3**/
+
+.section_three_title {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+/**Section_4**/
+.section_four {
+  background: #f4f4fd;
+}
+
+.section_four_main_title {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.section_four_member {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section_four_text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.section_four_list {
+  background-color: var(--primary-white-color);
+}
+
+/**Footer**/
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer_p {
+  color: var(--footer-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/**Portfolio**/
+
+.portfolio-section-button {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4fd;
+  color: var(--primary-logo-color);
+  background-color: var(--footer-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.portfolio-section-button:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.portfolio-section-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.portfolio-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--footer-background-color);
+}
+
+.portfolio-list-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
