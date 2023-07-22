@@ -28,6 +28,10 @@ img {
   display: block;
 }
 
+ul {
+  padding: 0;
+}
+
 .link {
   text-decoration: none;
 }
@@ -78,10 +82,13 @@ img {
 }
 
 .container {
-  display: flex;
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
 }
 
 /**Header**/
@@ -109,6 +116,10 @@ img {
   flex-direction: row;
   gap: 40px;
   margin: 0;
+}
+
+.header-address {
+  margin-left: auto;
 }
 
 .header-nav-links {
